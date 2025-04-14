@@ -45,7 +45,7 @@ Install some basic required packages
  sudo apt install -y curl wget apt-transport-https
  ```
 
-Minikube can run a Kubernetes cluster either in a VM or locally via Docker. This guide demonstrates the Docker method.
+Minikube can run a Kubernetes cluster locally via Docker.
 
 ```bash
  sudo apt install -y docker.io
