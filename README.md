@@ -32,7 +32,7 @@ Features of minikube:
 
 Then Connect to the terminal.
 
-2.Update our package lists to make sure we are getting the latest version and dependencies
+2. we should Update our package lists to make sure we are getting the latest version and dependencies
 
  ```bash
   sudo apt update
