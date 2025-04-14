@@ -32,7 +32,7 @@ Features of minikube:
 
 Then Connect to the terminal.
 
-2.Update your package lists to make sure you are getting the latest version and dependencies
+2.Update our package lists to make sure we are getting the latest version and dependencies
 
  ```bash
   sudo apt update
@@ -64,7 +64,7 @@ First, download the Minikube binary using curl:
 ```bash 
  curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 ```
-Make it executable and move it into your path:
+Make it executable and move it into our path:
 
 ```bash
  chmod +x minikube
@@ -95,7 +95,7 @@ Before we proceed to launch Nginx, let's understand the concept of Pods in Kuber
 
 Pods: Pods are the smallest deployable units in Kubernetes. A Pod can contain one or more containers that share storage and network resources and are scheduled together on the same node. Pods represent an application-specific "logical host" and are tightly coupled.
 
-==>Create your first pod on Kubernetes through minikube.
+==>Create our first pod on Kubernetes through minikube.
 
 Download kubectl, which is a Kubernetes command-line tool
 
@@ -104,14 +104,14 @@ Download kubectl, which is a Kubernetes command-line tool
 ```
 ![9a273514-edeb-4178-ad6a-d69546ba14cc](https://github.com/user-attachments/assets/7f2d7ab2-394d-4816-b5d3-9c651db20e1e)
 
-Check above image ⬆️ Make it executable and move it into your path:
+Check above image ⬆️ Make it executable and move it into our path:
 
 ```bash
  chmod +x kubectl
  sudo mv kubectl /usr/local/bin/
  ```
 
-Create a Pod Manifest: Create a YAML manifest file (nginx-pod.yaml) for your Nginx Pod. Here's an example:
+Create a Pod Manifest: Create a YAML manifest file (nginx-pod.yaml) for our Nginx Pod. Here's an example:
 
  ```bash
  apiVersion: v1
@@ -129,14 +129,14 @@ Create a Pod Manifest: Create a YAML manifest file (nginx-pod.yaml) for your Ngi
 ![243856ee-4ff2-4d0b-b8e9-f1ddc9708b84](https://github.com/user-attachments/assets/3f75ff8d-9bf1-4cf1-b018-d1840defe48d)
 
 
-Apply the Manifest: Use kubectl apply -f nginx-pod.yaml to create the Pod based on your manifest.
+Apply the Manifest: Use kubectl apply -f nginx-pod.yaml to create the Pod based on our manifest.
 
 ```bash
  kubectl apply -f nginx-pod.yaml
 ```
 ![7a0313cc-db48-4077-a8c1-8c12d5035200](https://github.com/user-attachments/assets/31931aab-2259-4221-81e5-7b7bb8766378)
 
-Verify Pod Creation: Check the status of your Pod using kubectl get pods. You should see the nginx-pod in the Running state.
+Verify Pod Creation: Check the status of our Pod using kubectl get pods. we should see the nginx-pod in the Running state.
 
 ```bash
  kubectl get pods
